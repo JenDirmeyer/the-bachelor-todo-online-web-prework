@@ -73,13 +73,9 @@ def get_average_age_for_season(data, season)
         contestants.each do |array|
             #binding.pry
               ages << array["age"].to_f
-              
-            #end  
           end 
-          binding.pry
-           average = ages.sum/ages.size
-           return average.ceil
-           #binding.pry
+          #binding.pry
+          return (ages.sum/ages.size).ceil
       end
      
     end  

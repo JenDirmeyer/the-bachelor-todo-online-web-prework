@@ -75,7 +75,7 @@ def get_average_age_for_season(data, season)
               ages << array["age"].to_f
           end 
           #binding.pry
-          return (ages.sum/ages.size).ceil
+          return (ages.sum/ages.size).round
       end
      
     end  

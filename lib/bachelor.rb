@@ -59,7 +59,6 @@ def get_occupation(data, hometown)
             #binding.pry
             if array["hometown"] == hometown
               return array["occupation"]
-              
               #binding.pry
             end  
         end
@@ -67,5 +66,18 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  ages = []
+    data.each do |seasons, contestants|
+      #binding.pry
+      if seasons == season
+        contestants.each do |array|
+          array.each do |cats, stats|
+            #binding.pry
+              ages << array["age"]
+              binding.pry
+            #end  
+          end 
+        end
+      end
+    end  
 end

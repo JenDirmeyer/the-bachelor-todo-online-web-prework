@@ -72,12 +72,11 @@ def get_average_age_for_season(data, season)
       if seasons == season
         contestants.each do |array|
             #binding.pry
-              ages << array["age"]
+              ages << array["age"].to_i
               #binding.pry
             #end  
           end 
            binding.pry
-        
       end
     end  
 end

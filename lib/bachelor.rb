@@ -77,7 +77,7 @@ def get_average_age_for_season(data, season)
             #end  
           end 
           return ages.sum/ages.size
-           binding.pry
+           #binding.pry
       end
     end  
 end

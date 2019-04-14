@@ -71,7 +71,6 @@ def get_average_age_for_season(data, season)
       #binding.pry
       if seasons == season
         contestants.each do |array|
-          array.each do |cats, stats|
             #binding.pry
               ages << array["age"]
               #binding.pry

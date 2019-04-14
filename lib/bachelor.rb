@@ -74,9 +74,10 @@ def get_average_age_for_season(data, season)
           array.each do |cats, stats|
             #binding.pry
               ages << array["age"]
-              binding.pry
+              #binding.pry
             #end  
           end 
+           binding.pry
         end
       end
     end  
